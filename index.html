@@ -72,7 +72,7 @@
       const container = document.getElementById('image-container');
       container.innerHTML = '<p>Görsel yükleniyor...</p>';
       try {
-        const response = await fetch('https://perchance.org/u/your-generator-name.txt'); // Perchance'ten image URL üretmeli
+        const response = await fetch('https://perchance.org/ai-text-to-image-generator'); // Perchance'ten image URL üretmeli
         const imageUrl = await response.text();
         container.innerHTML = `<img src="${imageUrl.trim()}" alt="Üretilen Görsel">`;
       } catch (err) {
